@@ -566,7 +566,7 @@ public class TransactionManager
     }
     public int getOutstandingTransactions() {
         if (isp instanceof LocalSpace)
-            return ((LocalSpace)sp).size(queue);
+            return ((LocalSpace)isp).size(queue);
         return -1;
     }
     protected String getKey (String prefix, long id) {
